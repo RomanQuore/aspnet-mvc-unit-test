@@ -38,3 +38,10 @@ steps:
     PathtoPublish: '$(Build.ArtifactStagingDirectory)'
     ArtifactName: 'drop'
     publishLocation: 'Container'
+    
+- task: IISWebAppManagementOnMachineGroup@0
+  inputs:
+    WebsiteName: 'yourWebsiteName' # Valor específico
+    WebsitePhysicalPath: '%SystemDrive%\inetpub\wwwroot' # Valor específico
+    WebsitePhysicalPathAuth: 'WebsiteUserPassThrough' # Valor específico
+

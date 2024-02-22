@@ -41,6 +41,12 @@ steps:
     
 - task: IISWebAppManagementOnMachineGroup@0
   inputs:
-    WebsiteName: 'Azure2' # Valor específico
-    WebsitePhysicalPath: '%SystemDrive%\Azure2' # Valor específico
+    WebsiteName: 'Azure2'
+    WebsitePhysicalPath: '%SystemDrive%\Azure2'
+    UserName: '$daniel'
+    Password: '$daniel'
 
+- task: IISWebAppManagementOnMachineGroup@0
+  inputs:
+    WebsiteName: 'Azure2'
+    WebsitePhysicalPath: 'C:\Azure2'

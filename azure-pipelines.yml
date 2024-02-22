@@ -41,7 +41,6 @@ steps:
     
 - task: IISWebAppManagementOnMachineGroup@0
   inputs:
-    WebsiteName: 'yourWebsiteName' # Valor específico
-    WebsitePhysicalPath: '%SystemDrive%\inetpub\wwwroot' # Valor específico
-    WebsitePhysicalPathAuth: 'WebsiteUserPassThrough' # Valor específico
+    WebsiteName: 'Azure2' # Valor específico
+    WebsitePhysicalPath: '%SystemDrive%\Azure2' # Valor específico
 

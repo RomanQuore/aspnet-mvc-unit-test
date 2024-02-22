@@ -59,8 +59,8 @@ steps:
     #StartStopRecycleAppPoolName: # string. Required when ActionIISApplicationPool = StartAppPool || ActionIISApplicationPool = StopAppPool || ActionIISApplicationPool = RecycleAppPool. Application pool name. 
   # IIS Website
     WebsiteName: # string. Required when ActionIISWebsite = CreateOrUpdateWebsite. Website name. 
-    WebsitePhysicalPath: '%SystemDrive%\inetpub\wwwroot' # string. Required when ActionIISWebsite = CreateOrUpdateWebsite. Physical path. Default: %SystemDrive%\inetpub\wwwroot.
-    WebsitePhysicalPathAuth: 'WebsiteUserPassThrough' # 'WebsiteUserPassThrough' | 'WebsiteWindowsAuth'. Required when ActionIISWebsite = CreateOrUpdateWebsite. Physical path authentication. Default: WebsiteUserPassThrough.
+    WebsitePhysicalPath: '%SystemDrive%\inetpub\wwwroot' # string. Required when ActionIISWebsite = CreateOrUpdateWebsite. Physical path. Default: %SystemDrive%\Azure2
+    WebsitePhysicalPathAuth: 'WebsiteUserPassThrough' # 'WebsiteUserPassThrough' | 'WebsiteWindowsAuth'. Required when ActionIISWebsite = CreateOrUpdateWebsite. Physical path authentication. Default: Azure2
     #WebsiteAuthUserName: # string. Required when WebsitePhysicalPathAuth = WebsiteWindowsAuth && ActionIISWebsite = CreateOrUpdateWebsite. Username. 
     #WebsiteAuthUserPassword: # string. Optional. Use when WebsitePhysicalPathAuth = WebsiteWindowsAuth && ActionIISWebsite = CreateOrUpdateWebsite. Password. 
     #AddBinding: false # boolean. Optional. Use when ActionIISWebsite = CreateOrUpdateWebsite. Add binding. Default: false.
